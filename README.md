@@ -48,3 +48,12 @@ export default async function (req, res) {
   res.status(200).json({ imageResult: result.data.data[0].url });
 }
 ```
+
+#### Los cambios que hay:
+
+- Forma de enviar el prompt: Ahora será obtenido a partir del req.body.text
+- Parámetros "n", "size" y "response_format"
+- El resultado se obtiene con result.data.data[0].url
+
+
+
