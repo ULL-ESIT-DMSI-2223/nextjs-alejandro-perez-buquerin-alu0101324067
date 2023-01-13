@@ -63,3 +63,19 @@ Y en su "index.js" el cual ahora es *image.js* se muestra la imagen con:
 <div className={styles.result}><img src={imageResult} />  </div>
 ```
 
+## Despliegue en Netlify
+
+Es una tarea muy sencilla, solo hay que:
+
+- Iniciar sesión en Netlify con GitHub 
+- Cambiar tu repositorio de privado a público
+- Click en el botón de abajo en la página principal "Add new site"
+- Buscamos nuestro repositorio
+- Las opciones de lanzamiento vienen configuradas para nextJS por defecto
+- En opciones avanzadas añadimos la variable de entorno OPENAI_API_KEY
+- Hacemos deploy
+
+https://stirring-valkyrie-0826ba.netlify.app
+
+
+
