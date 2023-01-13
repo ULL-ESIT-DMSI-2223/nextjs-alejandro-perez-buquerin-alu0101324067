@@ -29,7 +29,7 @@ Esta estructura consiste en que desde *index.js* nos envía a las distintas pág
 
 El código es muy parecido al de generación de texto:
 
-```
+```js
 export default async function (req, res) {
   const request = req.body.text || '';
   if (request.trim().length === 0) {
@@ -47,4 +47,4 @@ export default async function (req, res) {
     });
   res.status(200).json({ imageResult: result.data.data[0].url });
 }
-```js
+```
