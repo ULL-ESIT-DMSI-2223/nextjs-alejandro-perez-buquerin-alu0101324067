@@ -11,6 +11,7 @@ Mediante una función *onSubmit()* (activada mediante un evento), llamamos a la 
 ### Organización de los ficheros
 
 Puesto que vamos a tener varias funcionalidades y páginas con sus respectivas rutas, la estructura de pages será la siguiente:
+```
 .
 ├── 404.js
 ├── api
@@ -20,6 +21,7 @@ Puesto que vamos a tener varias funcionalidades y páginas con sus respectivas r
 ├── index.js
 ├── index.module.css
 └── pet.js
+```
 
 1 directory, 7 files
 
