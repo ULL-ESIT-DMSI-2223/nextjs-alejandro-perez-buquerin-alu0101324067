@@ -1,6 +1,28 @@
 import Link from 'next/link'
 import Head from "next/head";
 import styles from "./index.module.css";
+import styled from "styled-components";
+
+const GreenButton = styled.button`
+background-color: green;
+color: white;
+font-size: 20px;
+padding: 10px 20px;
+border-color: green;
+border-radius: 5px;
+margin: 10px 0px;
+cursor: pointer;
+`;
+const RedButton = styled.button`
+background-color: red;
+color: white;
+font-size: 20px;
+padding: 10px 20px;
+border-color: red;
+border-radius: 5px;
+margin: 10px 0px;
+cursor: pointer;
+`;
 
 export default function Home() {
 
@@ -11,16 +33,26 @@ return (
       <link rel="icon" href="/home_logo.png" />
     </Head>
     <main className={styles.main}>
-      <img src="/openai.png" className={styles.icon} />
-      <h1>OpenAI test page</h1>
+      <img src="/openAI.png" className={styles.icon} />
+      <h1>OpenAI test Web</h1>
+      <br></br><br></br>
       <img src="/dog.png" className={styles.icon} />
-      <h2><Link href="/pet">Generate pet name</Link></h2>
-      <br></br>
+      <h2>Generate pet name</h2>
+      <Link href="/pet">
+        <GreenButton>Go</GreenButton>
+      </Link>
+      <br></br><br></br>
       <img src="/image.png" className={styles.icon} />
-      <h2><Link href="/image">Generate image from text</Link></h2>
-      <br></br>
+      <h2>Generate image from text</h2>
+      <Link href="/image">
+        <GreenButton>Go</GreenButton>
+      </Link>
+      <br></br><br></br>
       <h2><img src="/404.png" className={styles.icon} /></h2>
-      <Link href="/404">Error 404 (why would you want to go here??)</Link>
+      <h2>Error 404 (why would you want to go here??</h2>
+      <Link href="/404">
+        <RedButton>404</RedButton>
+      </Link>
     </main>
   </div>
 )

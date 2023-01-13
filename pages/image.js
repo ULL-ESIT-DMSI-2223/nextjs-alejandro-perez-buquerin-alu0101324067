@@ -29,7 +29,7 @@ return (
             <link rel="icon" href="/dog.png" />
         </Head>
         <main className={styles.main}>
-            <img src="/dog.png" className={styles.icon} />
+            <img src="/image.png" className={styles.icon} />
                 <h3>Genera una imagen a partir de texto</h3>
                 <form onSubmit={onTextSubmit}>
                   <input
