@@ -77,5 +77,13 @@ Es una tarea muy sencilla, solo hay que:
 
 https://stirring-valkyrie-0826ba.netlify.app
 
+## Despliegue en Vercel
+
+Es igual que en Netlify, al iniciar sesión nos aparece una lista de nuestros repositorios, seleccionamos el que queremos desplegar y también añadimos la variable de entorno *OPENAI_API_KEY*
+
+## Ejercicios REST
+
+
+
 
 
