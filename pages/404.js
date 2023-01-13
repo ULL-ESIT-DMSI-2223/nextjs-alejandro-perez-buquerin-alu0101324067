@@ -7,7 +7,7 @@ export default function Home() {
     <div>
         <main className={styles.main}>
             <title>Error 404</title>
-            <h3>Page not found</h3>
+            <h1>404 - Page not found</h1>
             <h2>But you can drink something with the camel brothers &#128526;</h2>
             <img src = "/camel.jfif" className={styles.main} />
         </main>
