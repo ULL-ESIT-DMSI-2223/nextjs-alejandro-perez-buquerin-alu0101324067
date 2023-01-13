@@ -10,4 +10,39 @@ Mediante una función *onSubmit()* (activada mediante un evento), llamamos a la 
 
 ### Organización de los ficheros
 
-Puesto que vamos a tener varias funcionalidades y páginas con sus respectivas rutas hemos dividido el proyecto en esta jerarquía: 
+Puesto que vamos a tener varias funcionalidades y páginas con sus respectivas rutas, la estructura de pages será la siguiente:
+.
+├── 404.js
+├── api
+│   ├── generateImage.js
+│   └── generate.js
+├── image.js
+├── index.js
+├── index.module.css
+└── pet.js
+
+1 directory, 7 files
+
+Esta estructura consiste en que desde *index.js* nos envía a las distintas páginas */pet /image /404* estas páginas actuarán como el index original pero de esta forma no tenemos la generación de texto y la de imágenes en el mismo enlace.
+
+### Generación de imágenes
+
+El código es muy parecido al de generación de texto:
+
+```export default async function (req, res) {
+  const request = req.body.text || '';
+  if (request.trim().length === 0) {
+    res.status(400).json({
+      error: {
+        message: "Please enter a valid text",
+      }
+    });
+  }
+    const result = await openai.createImage({
+        prompt: request,
+        n: 1,
+        size: "1024x1024",
+        response_format: 'url',
+    });
+  res.status(200).json({ imageResult: result.data.data[0].url });
+}```js
