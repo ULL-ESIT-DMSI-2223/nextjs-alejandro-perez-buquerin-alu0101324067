@@ -57,5 +57,9 @@ export default async function (req, res) {
 - Parámetros "n", "size" y "response_format"
 - El resultado se obtiene con result.data.data[0].url
 
+Y en su "index.js" el cual ahora es *image.js* se muestra la imagen con:
 
+```html
+<div className={styles.result}><img src={imageResult} />  </div>
+```
 
