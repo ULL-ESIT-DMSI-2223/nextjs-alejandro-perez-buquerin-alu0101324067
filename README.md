@@ -29,7 +29,8 @@ Esta estructura consiste en que desde *index.js* nos envía a las distintas pág
 
 El código es muy parecido al de generación de texto:
 
-```export default async function (req, res) {
+```
+export default async function (req, res) {
   const request = req.body.text || '';
   if (request.trim().length === 0) {
     res.status(400).json({
@@ -45,4 +46,5 @@ El código es muy parecido al de generación de texto:
         response_format: 'url',
     });
   res.status(200).json({ imageResult: result.data.data[0].url });
-}```js
+}
+```js
