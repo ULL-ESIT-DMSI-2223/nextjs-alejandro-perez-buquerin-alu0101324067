@@ -85,23 +85,23 @@ Es igual que en Netlify, al iniciar sesión nos aparece una lista de nuestros re
 
 - To get all models
 
-[<img src="/public/rest1.jpg">]
+[<img src="/public/rest1.JPG">]
 
 - To get info of a model
 
-[<img src="/public/rest2.jpg">]
+[<img src="/public/rest2.JPG">]
 
 - To get a cute image
 
-[<img src="/public/rest3.jpg">]
+[<img src="/public/rest3.JPG">]
 
 - To get a completion
 
-[<img src="/public/rest4.jpg">]
+[<img src="/public/rest4.JPG">]
 
 - To get a moderation
 
-[<img src="/public/rest5.jpg">]
+[<img src="/public/rest5.JPG">]
 
 
 
