@@ -25,3 +25,5 @@ export default async function (req, res) {
     });
   res.status(200).json({ imageResult: result.data.data[0].url });
 }
+
+// Prueba
